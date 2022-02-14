@@ -20,9 +20,10 @@ Administrator can be created only through terminal of server by using "./manage.
  
 ## Doctor view
  
-1. Prescribe medication (type of medication/dosage/duration). (Doctor can only prescribe to those who have appointment in the future.)
+1. Prescribe medication (medication/dosage/duration).
 2. View scheduled appointments
-3. See patient appointment and medication history
+3. Schedule Follow up appointment in the future
+4. See patient appointment and medication history
 
 
 ## Patient View
