@@ -30,3 +30,5 @@ Administrator can be created only through terminal of server by using "./manage.
 
 1. book appointments with specific doctors - view only current medication and dosage.
 2. Book appointment by types(primary care, flu, mental care, and etc)
+
+# Hook React and Flask
