@@ -6,7 +6,7 @@
 An appointment website designed for Willhelm International. 
 
 ## Tech stack 
-Flask, Django, Sql, Bootstrap, jQuery.
+Django, Sql, Bootstrap, jQuery.
 
 <!-- **Webiste:** [Deployed on Pythonanywhere](http://jasonchan.pythonanywhere.com) -->
 
