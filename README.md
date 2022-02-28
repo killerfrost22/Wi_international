@@ -51,3 +51,6 @@ No need domain or dbms
 Easy to setup and free usage
 ### cons:
 https://devcenter.heroku.com/articles/django-app-configuration
+'''
+You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+'''
