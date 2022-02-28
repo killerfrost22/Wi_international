@@ -98,13 +98,13 @@ def patientvstime():
 
     return (dates, count[1:])
 
-def prescriptionvstime():
-    prescriptions = DoctorPrescription.objects.order_by('date')
-    dates = []
-    count = [0] 
-    for prescription in prescriptions:
-        dates.append(prescription.date)
-        count.append((count[-1])+1)
+# def prescriptionvstime():
+#     prescriptions = DoctorPrescription.objects.order_by('date')
+#     dates = []
+#     count = [0] 
+#     for prescription in prescriptions:
+#         dates.append(prescription.date)
+#         count.append((count[-1])+1)
 
     return (dates, count[1:])
 
@@ -165,20 +165,20 @@ def homepage(request):
 
     x1, y1 = patientvstime()
 
-    x2, y2 = prescriptionvstime()
+    # x2, y2 = prescriptionvstime()
 
     try:
         maxdate = max(x0[-1], x1[-1], x2[-1])
         x0.append(maxdate)
         x1.append(maxdate)
-        x2.append(maxdate)
+        # x2.append(maxdate)
         y0.append(y0[-1])
         y1.append(y1[-1])
-        y2.append(y2[-1])
+        # y2.append(y2[-1])
     except:
         pass
 
-    chart = get_plot([x0,x1,x2],[y0,y1,y2], "Time", "Count", "", 10,4)
+    chart = get_plot([x0,x1],[y0,y1], "Time", "Count", 10,4)
 
     if userprofile is not None:
         if request.user.is_doctor:
